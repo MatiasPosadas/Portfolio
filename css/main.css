@@ -36,8 +36,6 @@ H2 {
 .main__container .main__card-presentation,
 .main__container .card__aboutme,
 .main__container .study__cards .study__card-left,
-.study__cards .study__card,
-.proyectos .proyectos__card,
 .skills .skill__container,
 .contacto .contacto__container
     {
@@ -287,18 +285,18 @@ h2{
 /*- - - - - P R O Y E C T O S - - - - - */
 
 .main__container .proyectos {
-    max-width: 80%;
+    max-width: 100%;
     min-width: 30rem;
     width: auto;
-    padding: 1rem;
+    /* padding: 1rem; */
     height: auto;
     display: grid;
     gap: 5rem;
     grid-template-columns: 1fr;
-    place-items: center;
-    margin: 0 auto;
-    margin-bottom: 7rem;
-    align-items: center;
+    /* place-items: center; */
+    /* margin: 0 auto; */
+    /* margin-bottom: 7rem; */
+    /* align-items: center; */
     margin-bottom: 20rem;
 
 }
@@ -308,11 +306,12 @@ h2{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 95%;
-    background: rgb(255,157,190);
-    background: linear-gradient(3deg, rgba(255,157,190,1) 0%, rgba(77,96,247,1) 100%);
+    border-radius: 0rem;
+    width: 100%;
+    background: rgb(255,255,255);
+background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(255,126,25,1) 100%);
     margin: 0 auto;
-    border-radius: 5%;
+    /* border-radius: 5%; */
 }
 .proyectos__card .proyecto__img {
     width: 80%;
@@ -326,7 +325,7 @@ h2{
     width: 100%;
     height: auto;
     margin-top: 2rem;
-    border-radius: 5rem;
+    border-radius: 1rem;
 }
 .proyectos__card .proyecto__info {
     display: flex;
@@ -363,11 +362,14 @@ h2{
 }
 /*---CONYWEB---*/
 .proyectos__card--conyweb {
-    width: 95%;
+    /* width: 95%; */
     background: rgb(255,157,190);
     background: linear-gradient(3deg, rgba(255,157,190,1) 0%, rgba(77,96,247,1) 100%);
+    background: rgb(255,255,255);
+background: linear-gradient(3deg, rgba(255,255,255,1) 0%, rgba(218,112,148,1) 100%);
+
     margin: 0 auto;
-    border-radius: 5%;
+    /* border-radius: 5%; */
 }
 .proyecto__img--conyweb {
     margin: 0 auto;
@@ -378,7 +380,7 @@ h2{
     width: 100%;
     height: auto;
     margin-top: 2rem;
-    border-radius: 5rem;
+    /* border-radius: 5rem; */
 }
 
 /*- - - - - - H A B I L I D A D E S - - - - - -*/
