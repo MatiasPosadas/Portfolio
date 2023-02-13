@@ -294,7 +294,7 @@ h2{
     height: auto;
     display: grid;
     gap: 5rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     place-items: center;
     margin: 0 auto;
     margin-bottom: 7rem;
@@ -334,7 +334,48 @@ h2{
     margin-bottom: 1rem;
     font-weight: 500;
 }
-
+/*---CONYWEB---*/
+.proyectos__card--conyweb {
+    width: 95%;
+    background: rgb(255,157,190);
+    background: linear-gradient(3deg, rgba(255,157,190,1) 0%, rgba(77,96,247,1) 100%);
+    margin: 0 auto;
+    border-radius: 5%;
+}
+.proyecto__img--conyweb {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-top: 1rem;
+}
+.proyecto__img--conyweb img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 5rem;
+}
+.proyecto__info--conyweb h3{
+    color: #4d60f7;
+    background-color: #ffffff62;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.proyecto__info--conyweb h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(223, 48, 48);
+}
+.proyecto__info--conyweb p {
+    font-size: 1.8rem;
+    color: rebeccapurple;
+}
+.proyecto__info--conyweb .botones {
+    display: flex;
+}
+.proyecto__info--conyweb .botones a{
+    margin: 1rem;
+}
 /*- - - - - - H A B I L I D A D E S - - - - - -*/
 .habilidades {
     width: 80%;
