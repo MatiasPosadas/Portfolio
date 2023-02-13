@@ -303,24 +303,30 @@ h2{
 
 }
 .proyectos .proyectos__card {
-    min-width: 30rem;
-    max-width: 60rem;
-    height: auto;
     padding: 2rem;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 95%;
+    background: rgb(255,157,190);
+    background: linear-gradient(3deg, rgba(255,157,190,1) 0%, rgba(77,96,247,1) 100%);
+    margin: 0 auto;
+    border-radius: 5%;
 }
 .proyectos__card .proyecto__img {
     width: 80%;
     height: auto;
     border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .proyectos__card .proyecto__img img {
     width: 100%;
     height: auto;
+    margin-top: 2rem;
+    border-radius: 5rem;
 }
 .proyectos__card .proyecto__info {
     display: flex;
@@ -328,11 +334,32 @@ h2{
     align-items: center;
     text-align: center;
 }
+.proyecto__info h3{
+    color: #4d60f7;
+    background-color: #ffffff62;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 .proyectos__card .proyecto__info h4 {
     color: var(--color-terciario);
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.proyecto__info p {
+    font-size: 1.8rem;
+    color: rebeccapurple;
+}
+.proyecto__info .botones {
+    display: flex;
+}
+.proyecto__info .botones a{
+    margin: 1rem;
 }
 /*---CONYWEB---*/
 .proyectos__card--conyweb {
@@ -353,29 +380,7 @@ h2{
     margin-top: 2rem;
     border-radius: 5rem;
 }
-.proyecto__info--conyweb h3{
-    color: #4d60f7;
-    background-color: #ffffff62;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.proyecto__info--conyweb h4{
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: rgb(223, 48, 48);
-}
-.proyecto__info--conyweb p {
-    font-size: 1.8rem;
-    color: rebeccapurple;
-}
-.proyecto__info--conyweb .botones {
-    display: flex;
-}
-.proyecto__info--conyweb .botones a{
-    margin: 1rem;
-}
+
 /*- - - - - - H A B I L I D A D E S - - - - - -*/
 .habilidades {
     width: 80%;
