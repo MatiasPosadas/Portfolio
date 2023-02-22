@@ -291,10 +291,10 @@ h2{
 
 /*- - - - - P R O Y E C T O S - - - - - */
 
-#proyectos {
+#proyectos, #habilidades {
     /* position: fixed; */
     position: relative;
-    bottom: -8rem;
+    bottom: -12rem;
     font-size: 4rem;
     animation: t1 3s ease infinite;
     color: rgb(253, 252, 253);
@@ -327,12 +327,15 @@ h2{
     /* background-color: rgb(180, 83, 167); */
     background: rgb(16,0,255);
     background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%);
+    background: rgb(16,0,255);
+background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 20%, rgba(239,0,255,1) 100%);
 }
 .proyectos .proyectos__card {
-    width: 80%;
-    height: 100%;
+    width: 50%;
+    height: 80%;
     min-width: 20rem;
     padding: 2rem;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,7 +349,7 @@ h2{
     -webkit-backdrop-filter: blur(5px);
     transition: all 300ms;
 }
-.proyectos__card:hover{
+.proyectos__card:hover, .habilidad:hover{
     transform: translateY(-10px);
 }
 .proyectos__card:hover .proyecto__img img {
@@ -356,15 +359,18 @@ transform: scale(1.1);
     width: 90%;
     height: 100%;
     border-radius: 1rem;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
     margin-top: 2rem;
     margin-top: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .proyectos__card .proyecto__img img {
-    width: 100%;
+    width: 120%;
     height: auto;
     margin-top: 2rem;
+    margin: 0 auto;
     border-radius: 1rem;
     transition: all 300ms;
 }
@@ -385,7 +391,7 @@ transform: scale(1.1);
 
 .proyectos__card .proyecto__info h4 {
     color: #ecde18;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 1rem;
     font-weight: 500;
     font-size: 1.8rem;
@@ -413,6 +419,9 @@ transform: scale(1.1);
     text-transform: uppercase;
     font-weight: bold;
     border: none;
+    position: relative;
+    bottom: 0;
+    border-radius: 1rem;
 }
 .proyectos .btn__proyecto:hover {
     background-color: #663da3;
@@ -435,18 +444,30 @@ transform: scale(1.1);
 }
 
 /*- - - - - - H A B I L I D A D E S - - - - - -*/
+.habilidades__container {
+    width: 100%;
+    height: auto;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+    background: rgb(239,0,255);
+background: linear-gradient(3deg, rgba(239,0,255,1) 0%, rgba(16,0,255,0.7259278711484594) 70%);
+}
+#habilidades {
+    bottom: 0;
+    top: -5rem;
+    margin: 0 auto;
+}
 .habilidades {
     width: 80%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
     grid-template-rows: auto;
-    gap: 3rem;
+    gap: 6rem;
     margin: 0 auto;
-    margin-bottom: 20rem;
 }
 .habilidades .habilidad {
-    width: 30%;
+    width: 20rem;
     min-width: 20rem;
     height: auto;
     display: grid;
@@ -454,6 +475,17 @@ transform: scale(1.1);
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+#habilidades {
+    margin: 0;
 }
 .habilidades .habilidad figure {
     width: 80%;
@@ -650,6 +682,8 @@ p {
     
 }
 
+/* - - - - - M E D I A Q U E R I E - - - - -*/
+
 
 @media only screen and (max-width: 350px) {
 .contacto .contacto__container {
@@ -664,4 +698,23 @@ p {
     height: 25rem;
     padding: 2rem;
 }
+}
+
+@media (max-width:800px) {
+    .proyectos .proyectos__card {
+        width: 80%;
+        height: 100%;
+        padding-bottom: 2;
+    }
+    .main__container .proyectos {
+        gap: 5rem;
+    }
+    #proyectos {
+        bottom: -10rem;
+    }
+}
+@media (max-width:400px)  {
+    .proyectos .proyectos__card {
+        width: 90%;
+    }
 }
