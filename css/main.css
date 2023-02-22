@@ -291,7 +291,7 @@ h2{
 
 /*- - - - - P R O Y E C T O S - - - - - */
 
-#proyectos, #habilidades {
+#proyectos, #habilidades, #contacto {
     /* position: fixed; */
     position: relative;
     bottom: -12rem;
@@ -349,7 +349,7 @@ background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 20%, rgba(23
     -webkit-backdrop-filter: blur(5px);
     transition: all 300ms;
 }
-.proyectos__card:hover, .habilidad:hover{
+.proyectos__card:hover, .habilidad:hover, .contacto__container:hover{
     transform: translateY(-10px);
 }
 .proyectos__card:hover .proyecto__img img {
@@ -450,7 +450,7 @@ transform: scale(1.1);
     padding-top: 7rem;
     padding-bottom: 8rem;
     background: rgb(239,0,255);
-background: linear-gradient(3deg, rgba(239,0,255,1) 0%, rgba(16,0,255,0.7259278711484594) 70%);
+    background: linear-gradient(3deg, rgba(239,0,255,1) 0%, rgba(16,0,255,0.7259278711484594) 100%);
 }
 #habilidades {
     bottom: 0;
@@ -500,69 +500,99 @@ background: linear-gradient(3deg, rgba(239,0,255,1) 0%, rgba(16,0,255,0.72592787
 
 .habilidades .habilidad h3 {
     margin: 0 auto;
-    color: var(--color-terciario);
+    color: #fff;
 }
 
 
 /*- - - - - C O N T A C T O   - - - - -*/
-
+#contacto {
+    bottom: -10rem;
+    margin: 0 auto;
+}
+#contactainer {
+background: rgb(16,0,255);
+background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%);
+}
 .contacto {
     height: auto;
     width: 100%;
-    margin-bottom: 7rem;
+    padding-bottom: 7rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
     grid-auto-rows: auto;
     gap: 5rem;
     align-items: center;
     justify-content: center;
+    padding-top: 5rem;
 }
-
+.contacto hr {
+    margin: 0;
+    margin-top: 0.5rem;
+}
 .contacto .contacto__container {
     width: 90%;
+    max-width: 40rem;
+    min-width: 20rem;
     height: 15rem;
-    padding: 2rem;
-    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
 }
-
+.contacto .btn {
+    color: purple;
+    background-color: yellow;
+    font-weight: 500;
+    border: none;
+}
+.contacto .btn:hover {
+    color: yellow;
+    background-color: purple;
+    border: none;
+}
 .contacto .contacto__container .contacto__img {
-    width: 6rem;
-    height: 8rem;
-    border-radius: 1rem;
-
+    width: 10rem;
+    height: 10rem;
+    margin: auto auto;
 }
-
 .contacto .contacto__container .contacto__img img{
     width: 100%;
     height: auto;
     overflow: hidden;
 }
-
 .contacto .contacto__container .contacto__info {
     height: 8rem;
-    margin-left: 2rem;
     gap: 2rem;
 }
-
 .contacto .contacto__container .contacto__info h4 {
     font-size: 1.9rem;
     font-family: var(--font-secondary);
     font-weight: bold;
-    color: var(--color-terciario);
-    margin-bottom: 3rem;
+    color: #fff;
+    /* margin-bottom: 3rem; */
 }
-
 .contacto .contacto__container .contacto__info a {
     margin-top: 3rem;
 }
-
 .contacto button{
     width: auto;
 }
-
+.habilidades__container .contak {
+    background-color: red;
+}
 /* - - - B O T O N D E S U B I R - - -*/
 
 .go-top-container {
@@ -686,17 +716,14 @@ p {
 
 
 @media only screen and (max-width: 350px) {
-.contacto .contacto__container {
-    flex-direction: column;
-    text-align: center;
-}
+
 .contacto .contacto__container .contacto__info h4 {
     margin-top: 2rem;
 }
 .contacto .contacto__container {
-    width: 25rem;
-    height: 25rem;
-    padding: 2rem;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 }
 }
 
