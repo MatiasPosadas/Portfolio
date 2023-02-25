@@ -28,12 +28,26 @@ body {
     height: auto;
     font-size: 1.6rem;
     font-family: var(--font);
+    background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+@keyframes fanimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 H2 {
     font-family: 'Kanit', sans-serif;
 }
 /*- - - - - B O X S H A D O W - - - - -*/
-.main__container .main__card-presentation,
+/* .main__container .main__card-presentation,
 .main__container .card__aboutme,
 .main__container .study__cards .study__card-left,
 .skills .skill__container,
@@ -44,12 +58,15 @@ background: #ffffff;
 box-shadow:  -4px 4px 11px #969696,
              6px -6px 11px #ffffff;
 
-}
+} */
 .study__card {
-    border-radius: 50px;
-background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+    /* background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
 }
 h2{
     font-size: 2.5rem;
@@ -89,13 +106,14 @@ h2{
     width: 100%;
     height: 4rem;
     /* background-color: var(--color-terciario); */
-    background: rgb(16,0,255);
-    background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%);
+    /* background: rgb(16,0,255);
+    background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%); */
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
     z-index: 1;
+    border-radius: 0 !important;
 }
 .navbar {
     width: 100%;
@@ -143,7 +161,7 @@ h2{
 .main__container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 7rem;
+    padding-top: 7rem;
 
 }
 .main__container .main__card-presentation {
@@ -239,12 +257,14 @@ h2{
     margin-bottom: 7rem;
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .study__cards .study__card {
-    min-width: 20rem;
+    min-width: 30rem;
     max-width: 100%;
     height: auto;
     display: flex;
@@ -254,11 +274,16 @@ h2{
     margin: 0 auto;
 }
 .study__cards .study__card .card__top {
+    height: 5.5rem;
     display: flex;
     flex-direction: row;
     flex: auto;
     padding: 1rem;
     margin: 0 auto;
+}
+.study__cards .study__card .card__top h3 {
+    color: #fff;
+    font-weight: 300;
 }
 .study__cards .study__card .card__top img {
     width: 5rem;
@@ -272,26 +297,30 @@ h2{
 .study__cards .study__card .card__top .data p {
     font-weight: bold;
     color: var(--color-terciario);
+    color:rgb(197, 197, 2);
 }
 .study__cards .study__card .card__bot {
     margin-bottom: 1rem;
 }
 .study__cards .study__card .card__bot p {
-    text-align: justify;
+    text-align: start;
     padding: 1.5rem;
     line-height: 1.9rem;
+    color: #fff;
+    font-weight: lighter;
 }
 .study__cards .study__card .btn {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 1rem;
     padding: 2rem;
+    text-align: center;
 }
 
 
 /*- - - - - P R O Y E C T O S - - - - - */
 
-#proyectos, #habilidades, #contacto {
+#proyectos, #habilidades, #contacto, #estudio, #sobremi {
     /* position: fixed; */
     position: relative;
     bottom: -12rem;
@@ -299,6 +328,9 @@ h2{
     animation: t1 3s ease infinite;
     color: rgb(253, 252, 253);
     text-shadow: 0px 2px 14px rgba(0,0,0,0.8);
+}
+#sobremi, #estudio {
+    bottom: 0;
 }
 @keyframes t1 {
     0% {
@@ -325,10 +357,10 @@ h2{
     place-items: center;
     padding: 5rem 0;
     /* background-color: rgb(180, 83, 167); */
-    background: rgb(16,0,255);
+    /* background: rgb(16,0,255);
     background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%);
     background: rgb(16,0,255);
-background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 20%, rgba(239,0,255,1) 100%);
+background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 20%, rgba(239,0,255,1) 100%); */
 }
 .proyectos .proyectos__card {
     width: 50%;
@@ -340,14 +372,6 @@ background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 20%, rgba(23
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 3rem;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: all 300ms;
 }
 .proyectos__card:hover, .habilidad:hover, .contacto__container:hover{
     transform: translateY(-10px);
@@ -449,8 +473,8 @@ transform: scale(1.1);
     height: auto;
     padding-top: 7rem;
     padding-bottom: 8rem;
-    background: rgb(239,0,255);
-    background: linear-gradient(3deg, rgba(239,0,255,1) 0%, rgba(16,0,255,0.7259278711484594) 100%);
+    /* background: rgb(239,0,255);
+    background: linear-gradient(3deg, rgba(239,0,255,1) 0%, rgba(16,0,255,0.7259278711484594) 100%); */
 }
 #habilidades {
     bottom: 0;
@@ -476,13 +500,6 @@ transform: scale(1.1);
     justify-content: center;
     margin: 0 auto;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 3rem;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 #habilidades {
     margin: 0;
@@ -510,8 +527,8 @@ transform: scale(1.1);
     margin: 0 auto;
 }
 #contactainer {
-background: rgb(16,0,255);
-background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%);
+/* background: rgb(16,0,255);
+background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239,0,255,1) 100%); */
 }
 .contacto {
     height: auto;
@@ -543,14 +560,6 @@ background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 3rem;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    transition: all 300ms;
 }
 .contacto .btn {
     color: purple;
@@ -664,7 +673,7 @@ background: linear-gradient(3deg, rgba(16,0,255,0.7259278711484594) 0%, rgba(239
 footer {
     width: 100%;
     height: 6rem;
-    background: var(--color-terciario);
+    border-radius: 0 !important;
 }
 footer a {
     height: 100%;
@@ -693,7 +702,18 @@ p {
     line-height: 2.5rem;
 }
 
+/* - - - - - B O X   S H A D O W - - - - - */
 
+.card__aboutme, .contacto__container, .habilidad, .proyectos__card, .card__aboutme, .study__card, footer, .go-top-button, .header   {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3rem;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 300ms;
+}
 
 @media only screen and (max-width: 720px) {
     .main__container .main__card-presentation {
