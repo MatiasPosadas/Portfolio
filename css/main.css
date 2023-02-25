@@ -161,23 +161,25 @@ h2{
 .main__container {
     width: 100%;
     margin: 0 auto;
-    padding-top: 7rem;
-
+    /* padding-top: 4rem; */
 }
 .main__container .main__card-presentation {
-    max-width: 90rem;
+    /* max-width: 90rem;
     min-width: 30rem;
-    width: 80%;
-    height: auto;
+    width: 80%; */
+    /* height: auto; */
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
     margin: 0 auto;
-    margin-bottom: 7rem;
+    background-color: #4242de;
+    /* margin-bottom: 7rem; */
 
 }
 .main__container .main__card-presentation .card__left {
-    width: auto;
+    width: 45%;
     min-width: 25rem;
     height: 100%;
     display: flex;
@@ -196,19 +198,20 @@ h2{
     font-size: 3rem;
     margin-top: 1rem;
     text-align: center;
-
+    color: #fff;
 }
 .main__container .main__card-presentation .card__left h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-top: 1rem;
-    color: var(--color-terciario);
+    color: #fff;
     text-align: center;
     margin-bottom: 2rem;
 
 }
 
 .main__container .card__right {
+    width: 45%;
     max-width: 35rem;
     min-width: 25rem;
     height: auto;
@@ -245,6 +248,9 @@ h2{
 .main__container .card__aboutme .card__info {
     width: 90%;
     margin-bottom: 2rem;
+}
+.main__container .card__aboutme .card__info p {
+    color: #fff;
 }
 
 /*- - - - - E S T U D I O - - - - - */
