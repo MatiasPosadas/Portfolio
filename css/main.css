@@ -776,7 +776,7 @@ p {
     bottom: -12rem; */
     margin: 7rem auto 2rem auto;
     font-size: 4rem;
-    animation: t1 3s ease infinite;
+    /* animation: t1 3s ease infinite; */
     color: rgb(253, 252, 253);
     text-shadow: 0px 2px 14px rgba(0,0,0,0.8);
 }
