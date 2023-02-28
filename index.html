@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- fontawesome-->
     <script src="https://kit.fontawesome.com/e096e48514.js" crossorigin="anonymous"></script>
+    <script src="javascript/scrollreveal.js"></script>
     <title>Matias Frontend</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar" id="navbar">
+    <header class="header reveal-down">
+        <nav class="navbar reveal-down" id="navbar">
             <ul class="navbar__items">
                 <li class="navbar__item"><a href="#Hola"><span class="nav__text"> Sobre mí</span><span class="nav__icon"><i class="fa-solid fa-user"></i></span></a></li>
                 <li class="navbar__item"><a href="#estudio"><span class="nav__text">Estudio</span><span class="nav__icon"><i class="fa-solid fa-graduation-cap"></i></span></a></li>
@@ -43,7 +44,7 @@
                 <path fill="#4242de" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,149.3C384,117,480,75,576,74.7C672,75,768,117,864,154.7C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
         <h2 id="sobremi">sobre mi</h2>
-        <div class="card__aboutme">
+        <div class="card__aboutme reveal-left">
             <div class="card__info">
                 <p>
                     Actualmente resido en la ciudad de Buenos Aires
@@ -61,9 +62,9 @@
         </div>
         <!-- E S T U D I O -->
         <h2 id="estudio">Estudio</h2>
-        <div class="study__cards" >
+        <div class="study__cards reveal-left" >
             <div class="study__card">
-                <div class="card__top">
+                <div class="card__top ">
                     <img src="img/logo-platzi.png" alt="Logo platzi">
                     <div class="data">
                         <p>Escuela Platzi</p>
@@ -147,8 +148,8 @@
         </div>
           <!--  P R O Y E CT O S -->
           <h2 id="proyectos">Proyectos</h2>
-        <div class="proyectos" >
-            <div class="proyectos__card">
+        <div class="proyectos reveal-left" >
+            <div class="proyectos__card ">
                 <div class="proyecto__img">
                     <img src="img/SNEAKER-WEB.png" alt="Imagen de proyecto">
                 </div>
@@ -182,8 +183,8 @@
         <!-- H A B I L I D A D E S-->
         <h2 id="habilidades">Habilidades</h2>
         <div class="habilidades__container">
-            <div class="habilidades">
-                <div class="habilidad">
+            <div class="habilidades reveal-left">
+                <div class="habilidad ">
                     <figure>
                         <img src="img/logo-html.png" alt="Logo html">
                     </figure>
@@ -217,7 +218,7 @@
         </div>
         <h2 id="contacto">Contacto</h2>
         <!-- -- - - - - C O N T A C T O - - - - - - - --->
-        <div class="contacto" id="contactainer">
+        <div class="contacto reveal-left" id="contactainer">
             <div class="contacto" >
                 <div class="contacto__container linkedin">
                     <div class="contacto__img">
@@ -284,5 +285,6 @@
         </footer>
 
         <script src="javascript/gotop.js"></script>
+        <script src="javascript/index.js"></script>
 </body>
 </html>
