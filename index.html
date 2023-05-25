@@ -3,288 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
-    minimum-scale=1.0">
-    <!--css-->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- fontawesome-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e096e48514.js" crossorigin="anonymous"></script>
-    <script src="javascript/scrollreveal.js"></script>
-    <title>Matias Frontend</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Matias Adrian Posadas</title>
 </head>
 <body>
-    <header class="header reveal-down">
-        <nav class="navbar reveal-down" id="navbar">
-            <ul class="navbar__items">
-                <li class="navbar__item"><a href="#Hola"><span class="nav__text"> Sobre mí</span><span class="nav__icon"><i class="fa-solid fa-user"></i></span></a></li>
-                <li class="navbar__item"><a href="#estudio"><span class="nav__text">Estudio</span><span class="nav__icon"><i class="fa-solid fa-graduation-cap"></i></span></a></li>
-                <li class="navbar__item"><a href="#proyectos"><span class="nav__text">Proyectos</span><span class="nav__icon"><i class="fa-solid fa-briefcase"></i></span></a></li>
-                <li class="navbar__item"><a href="#habilidades"><span class="nav__text">Habiliades</span><span class="nav__icon"><i class="fa-solid fa-code"></i></span></a></li>
-                <li class="navbar__item"><a href="#contacto"><span class="nav__text">Contacto</span><span class="nav__icon"><i class="fa-solid fa-address-card"></i></span></a></li>
-            </ul>
-        </nav>
-        <div id="icon-menu">
-            <i class="fa-solid fa-bars"></i>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="img/LOGO-MAP.png.png" alt="Logo">
+                <span>Matias Adrian Posadas</span>
+            </a>
+        </div>
+        <div class="nav-botones">
+            <button id="btn-aboutme"><a href="#SobreMi">SobreMi</a></button>
+            <button id="btn-skils"><a href="#skills">Habilidades</a></button>
+            <button id="btn-project"><a href="#project">Proyectos</a></button>
+            <button id="btn-contact"><a href="#formulario">Contactame</a></button>
+        </div>
+        <div class="idioma">
+            <a href="es/index.html"><img src="img/flags/en.svg" alt="">English</a>
+        </div>
+        <button class="switch" id="switch">
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fa-solid fa-moon"></i></span>
+        </button>
+    </nav>
+
+
+    <header class="container" id="SobreMi">
+        <div class="header-info">
+            <h2>Matias Adrian Posadas</h2>
+            <h3>Frontend Developer</h3>
+            <p>Soy un desarrollador comprometido, responsable, detallista, capaz de buscar y encontrar soluciones creativas y efectivas a desafíos de diferente complejidad.</p>
+            <a title="Download Cv" download="Curriculum vitae Matias Posadas.pdf" href="download/Curriculum vitae.pdf" class="btn">Descargar CV</a>
+            <div class="profiles">
+                <a href="https://www.linkedin.com/in/posadas-matias/" target="_blank" Rel=»Noopener Noreferrer>
+                    <span class="link-p"><i class="fa-brands fa-linkedin"></i></span>
+                </a>
+                <a href="https://github.com/MatiasPosadas"target="_blank" Rel=»Noopener Noreferrer >
+                    <span class="link-p"><i class="fa-brands fa-github"></i></span>
+                </a>
+                <a href="mailto:connect.matias.posadas@gmail.com" target="_blank" Rel=»Noopener Noreferrer>
+                    <span class="link-p"><i class="fa-solid fa-envelope"></i></span>
+                </a>
+            </div>
         </div>
     </header>
-    <main class="main__container" id="Hola">
-        <div class="main__card-presentation">
-            <div class="card__left">
-                <h1>Matias Posadas</h1>
-                <!-- <h2>Frontend Developer</h2> -->
-                <span class="frontend">Frontend Developer</span>
-                <a title="Descargar Cv" download="Curriculum vitae Matias Posadas.pdf" href="download/Curriculum vitae.pdf" class="btn">Descargar CV</a>
+    <section class="container" id="aboutme">
+        <h1 class="title">Sobre Mi</h2>
+        <div class="aboutme-box">
+            <div class="aboutme-img">
+                <img src="img/ABOUTME-IMG.png" alt="">
             </div>
-            <!-- <div class="card__right">
-                <div class="card__right-img">
-                <img src="img/Matias.png" alt="Foto ilustrativa de Matias">
-                </div>
-            </div> -->
-            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#4242de" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,149.3C384,117,480,75,576,74.7C672,75,768,117,864,154.7C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <div class="aboutme-info">
+                <p>Soy Matias Adrian Posadas, diseñador gráfico y un programador frontend en constante crecimiento. <br>
+                    Amo la paz de programar acompañado de música Lo-Fi, me gusta desafiarme e ir superándome semana a semana.<br>
+                    Realizo mi aprendizaje de manera autodidacta acompañado de cursos que crea necesarios a través de internet.</p>
+            </div>
         </div>
-        <h2 id="sobremi">sobre mi</h2>
-        <div class="card__aboutme reveal-left">
-            <div class="card__info">
+    </section>
+
+    <section class="container" id="skills">
+        <div class="skills-box">
+            <h1 class="title" id="skill-c">Habilidades</h1>
+            <div class="skills-container" >
+                <div class="my-skill shadow1">
+                    <h4>
+                        <span><i class="fa-solid fa-user"></i></span><br>Personal
+                    </h4>
+                    <ul>
+                        <li>Proactivo</li>
+                        <li>Comunicador</li>
+                        <li>Resolutivo</li>
+                        <li>Creativo</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div class="my-skill shadow1">
+                    <h4>
+                        <span><i class="fa-solid fa-code"></i></span><br>Frontend
+                    </h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Sass</li>
+                        <li>Bootstrap</li>
+                        <li>Wordpress</li>
+
+                    </ul>
+                </div>
+
+                <div class="my-skill shadow1">
+                    <h4>
+                        <span><i class="fa-solid fa-screwdriver-wrench"></i></span><br>Otros
+                    </h4>
+                    <ul>
+                        <li>Git</li>
+                        <li>Git Hub</li>
+                        <li>SCRUM</li>
+                        <li>VS Code</li>
+                        <li>Figma</li>
+                        <li>Elementor</li>
+                        <li>Photoshop</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="learning">
+        <div class="learning-box">
+            <div class="learning shadow1">
+                <div class="learning-text">
+                    <h2 class="title">Siempre aprendiendo</h2>
+                    <p>Como todo programador en busca del desarrollo personal me encuentro capacitandome todo el tiempo. <br>
+                        El trabajar de lo que me apasiona fue, es y sera una gran ayuda en mi aprendizaje. <br>
+                    </p>
+                </div>
+                <div class="learning-img">
+                    <div class="now">
+                        <h3 class="title">Actualmente estoy aprendiendo sobre</h3>
+                    </div>
+                    <div class="logo-img">
+                        <img src="img/logo-react.png" alt="logo-react" id="react"> <label for="react">React</label>
+                    </div>
+                    <div class="logo-img">
+                        <img src="img/logo-idiomas.png" alt="logo-react" id="inglés"> <label for="inglés">Inglés</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container" id="project">
+        <div class="project-box">
+            <h1 class="title">Proyectos</h1>
+            <div class="project-card shadow1">
+                <div class="project-img">
+                    <img src="img/project-cony.png" alt="">
+                </div>
+                <h4 class="title">Cursos de belleza</h4>
+                <div class="code-container">
+                    <span class="code">Html</span>
+                    <span class="code">Css</span>
+                    <span class="code">Javascript</span>
+                </div>
                 <p>
-                    Actualmente resido en la ciudad de Buenos Aires
-                    Argentina, me gustan cosas como.. la música Lo-Fi, entrenar o realizar algún tipo de
-                    deporte, ver series o películas en familia,
-                    capacitarme y ampliar mis conocimientos, programar proyectos 
-                    propios como entrenamiento y sobre todo
-                    acompañar todos esos momentos cebando unos
-                    ricos mates. <br>
-                    Gracias por visitar mi portfolio, lo hice
-                    con mucho amor y lo iré mejorando cuanto más
-                    habilidades vaya adquiriendo.
+                    Cursoscony es una web orientada a brindar información de los cursos que brinda la academia, con la búsqueda de brindar seguridad para adquirir el producto. <br>
+
+                    Se sitúo la información de manera estratégica para obtener el mejor resultado.  <br>
+
+                    En cuanto al diseño se buscó simpleza para no perder la atención del cliente en lo que realmente importa.</p>
+                    <div class="project-links">
+                        <span>
+                            <a href="https://github.com/MatiasPosadas/curso-nails " target="_blank" Rel=»Noopener Noreferrer class="btn-basic">
+                                Ver código<i class="fa-brands fa-github"></i>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="https://cursoscony.com/" target="_blank" Rel=»Noopener Noreferrer>
+                                Ver online<i class="fa-solid fa-square-arrow-up-right"></i>
+                            </a>
+                        </span>
+                    </div>
+            </div>
+            <div class="project-card shadow1">
+                <div class="project-img">
+                    <img src="img/project-bluesteep.png" alt="">
+                    <!-- <img src="img/project-bluesteep.png" class="movil" alt=""> -->
+                </div>
+                <h4 class="title">Bluesteep</h4>
+                <div class="code-container">
+                    <span class="code">Html</span>
+                    <span class="code">Css</span>
+                    <span class="code">Javascript</span>
+                </div>
+                <p>Bluesteep es un proyecto propio en el cual me aboco a la venta de páginas web. <br>
+
+                    La web fue creada buscando informar a los visitantes sobre como adquirir una página web y sus beneficios. <br>
+                    Se busco un diseño amigable, solido y 'colorido' aprovechando los altos contrastes en lugares estrategicos.
                 </p>
+                <div class="project-links">
+                    <span>
+                        <a href="https://github.com/MatiasPosadas/bluesteep" target="_blank" Rel=»Noopener Noreferrer class="btn-basic">
+                            Ver código<i class="fa-brands fa-github"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://www.bluesteep.com/" target="_blank" Rel=»Noopener Noreferrer>
+                            Ver online<i class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </span>
+                </div>
             </div>
+            <div class="project-card shadow1">
+                <div class="project-img">
+                    <img src="img/project-gym.png" alt="">
+                </div>
+                <h4 class="title">Gym web</h4>
+                <div class="code-container">
+                    <span class="code">Html</span>
+                    <span class="code">Css</span>
+                    <span class="code">Javascript</span>
+                </div>
+                <p>'GymWeb' es un proyecto propio el cual se basa en el diseño de una página web de 'ejemplo' para ofrecerles a clientes una base de como pudría quedar la página web de su gimnasio, la misma fue creada pensando en que los usuarios tengan fácil acceso a la información necesaria brindada por el establecimiento.</p>
+                <div class="project-links">
+                    <span>
+                        <a href="https://github.com/MatiasPosadas/window-gym" target="_blank" Rel=»Noopener Noreferrer class="btn-basic">
+                            Ver código<i class="fa-brands fa-github"></i>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="https://gym.bluesteep.com/" target="_blank" Rel=»Noopener Noreferrer>
+                            Ver online<i class="fa-solid fa-square-arrow-up-right"></i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+    </section>
+
+    <section class="container" id="formulario">
+        <h1 class="title">Contactame</h1>
+        <div class="formulario__box shadow1">
+            <div class="form-contact">
+                <div class="form-img"></div>
+                <div class="form-links">
+                    <div class="icon-form"><i class="fa-brands fa-github"></i></div>
+                    <div class="data-form">
+                        <span>Github</span>
+                        <a href="https://github.com/MatiasPosadas">github.com/matias-posadas</a>
+                    </div>
+                </div>
+                <div class="form-links">
+                    <div class="icon-form"><i class="fa-brands fa-linkedin"></i></div>
+                    <div class="data-form">
+                        <span>Linkedin</span>
+                        <a href="https://www.linkedin.com/in/posadas-matias/">linkedin.com/in/posadas-matias/</a>
+                    </div>
+                </div>
+                <div class="form-links">
+                    <div class="icon-form"><span>@</span></div>
+                    <div class="data-form">
+                        <span>Email</span>
+                        <a href="mailto:connect.matias.posadas@gmail.com" target="_blank" Rel=»Noopener Noreferrer>Click para enviar correo</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <form class="form" action="https://formspree.io/f/xpzeydja"
+                method="POST" target="_blank">
+                <div class="form__container">
+                        <h2 class="form__title">Enviame un mensaje</h2>
+                        <input type="text" class="form__input" placeholder="Nombre" required>
+                        <input type="email" name="email" class="form__input" placeholder="Correo" required>
+                        <textarea class="form__input form__input--mensaje" name="message" placeholder="Mensaje" required></textarea>
+                        <input type="submit" value="Enviar" class="btn-form">
+                </div>
+            </form>
         </div>
-        <!-- E S T U D I O -->
-        <h2 id="estudio">Estudio</h2>
-        <div class="study__cards reveal-left" >
-            <div class="study__card">
-                <div class="card__top ">
-                    <img src="img/logo-platzi.png" alt="Logo platzi">
-                    <div class="data">
-                        <p>Escuela Platzi</p>
-                        <h3>Desarrollo web</h3>
-                    </div>
-                </div>
-                <div class="card__bot">
-                    <p>
-                        En la actualidad me encuentro atravesando
-                        la escuela de desarrollo web de platzi.
-                        Haciendo énfasis en el área frontend.
-                        Atravesando desafíos todas las semanas.
-                        En mi perfil se pueden encontrar
-                        un listado de los cursos ya completados.
-                    </p>
-                </div>
-                <a href="https://platzi.com/p/posadasmatias1/" class="btn" target="_blank" rel="noopener noreferrer">Platzi</a>
-            </div>
+    </section>
 
-            <div class="study__card">
-                <div class="card__top">
-                    <img src="img/logo-google.png" alt="Logo internet">
-                    <div class="data">
-                        <p>Educación en línea</p>
-                        <h3>Google</h3>
-                    </div>
-                </div>
-                <div class="card__bot">
-                    <p>
-                        Como estudiante autónomo mi mejor aliado
-                        se es el internet, ya que en el encuentro
-                        infinidad de información, logrando 
-                        resolver cada duda o inconveniente que tenga. <br>
-                        Encontrando capacitaciones asombrosas,
-                        foros sobre coding, edutubers, stremers de 
-                        programación, retos a resolver, etc.
-                        Desde el 2015 al 2020 logre capacitarme como 
-                        diseñador gráfico aprendiendo lo fundamental
-                        sobre el diseño, sus por que y a manejar 
-                        tecnologías como: Photoshop, CorelDRAW 
-                        e Illustrator.
-                    </p>
-                </div>
-            </div>
 
-            <div class="study__card">
-                <div class="card__top">
-                    <img src="img/logo-rargentinaprograma.jpg" alt="Logo internet">
-                    <div class="data">
-                        <p>Curso JavaScript + React</p>
-                        <h3>r/Argentina programa</h3>
-                    </div>
-                </div>
-                <div class="card__bot">
-                    <p>
-                        Al 25 - 11 -2022 inicie este curso de r/argentina programa.
-                        Todas las clases de este curso utilizan el lenguaje de programación "Javascript". <br>
-                        La primera parte del curso se centra en enseñar las bases del desarrollo "front-end". <br>
-                        La segunda parte del curso se centra en el desarrollo "back-end" <br>
-                    </p>
-                </div>
-                <a href="https://argentinaprograma.com/" class="btn" target="_blank" rel="noopener noreferrer">Conocer</a>
-            </div>
 
-            <div class="study__card">
-                <div class="card__top">
-                    <img src="img/logo-ingles.png" alt="Logo ingles">
-                    <div class="data">
-                        <p>Ingles</p>
-                        <h3>E-learning</h3>
-                    </div>
-                </div>
-                <div class="card__bot">
-                    <p>
-                        En la actualidad me encuentro aprendiendo inglés de manera autónoma, buscando perfeccionar mi habla y escritura a través de cursos y diversos profesores online.
-                        El idioma ingles es una gran prioridad en mi ruta de aprendizaje, por no decir la primera..
-
-                    </p>
-                </div>
-            </div>
+    <footer>
+        <div class="footer-box">
+            <h4>Gracias por visitar mi Portfolio</p>
+            <p>Acepto sugerencias, solo depositalas en un mensaje.</p>
+            <p></p>
         </div>
-          <!--  P R O Y E CT O S -->
-          <h2 id="proyectos">Proyectos</h2>
-        <div class="proyectos reveal-left" >
-            <div class="proyectos__card ">
-                <div class="proyecto__img">
-                    <img src="img/SNEAKER-WEB.png" alt="Imagen de proyecto">
-                </div>
-                <div class="proyecto__info">
-                    <h3>Simulación de compra.</h3>
-                    <h4>HTML   CSS   JAVASCRIPT</h4>
-                    <hr>
-                    <P>Imitación de una página ecommerce, basado en la compra de un producto. <br>
-                        Adaptado a dispositivos móviles.
-                    </P>
-                    <a href="https://tangerine-dodol-75e922.netlify.app/" class="btn btn__proyecto" target="_blank" rel="noopener noreferrer">Visitar</a>
-                </div>
-            </div>
-            <div class="proyectos__card">
-                <div class="proyecto__img">
-                    <img src="img/NAILSWEB.png" alt="Imagen de proyecto">
-                </div>
-                <div class="proyecto__info">
-                    <h3>Landing page Curso manicuria</h3>
-                    <h4>HTML   CSS   JAVASCRIPT</h4>
-                    <hr>
-                    <P>Landing page abocada a informar sobre cursos de manicuria con el fin de facilitar el trabajo..
-                    </P>
-                    <div class="botones">
-                    <a href="https://matiasposadas.github.io/curso-nails/" class="btn btn__proyecto" target="_blank" rel="noopener noreferrer">Visitar</a>
-                    <a href="https://github.com/MatiasPosadas/curso-nails" class="btn btn__proyecto" target="_blank" rel="noopener noreferrer">Git-hub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- H A B I L I D A D E S-->
-        <h2 id="habilidades">Habilidades</h2>
-        <div class="habilidades__container">
-            <div class="habilidades reveal-left">
-                <div class="habilidad ">
-                    <figure>
-                        <img src="img/logo-html.png" alt="Logo html">
-                    </figure>
-                    <h3 class="subtitle">HTML</h3>
-                </div>
-                <div class="habilidad">
-                    <figure>
-                        <img src="img/logo-css.png" alt="">
-                    </figure>
-                    <h3>CSS</h3>
-                </div>
-                <div class="habilidad">
-                    <figure>
-                        <img src="img/logo-JavaScript.png" alt="">
-                    </figure>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="habilidad">
-                    <figure>
-                        <img src="img/logo-Sass.png" alt="">
-                    </figure>
-                    <h3>Sass</h3>
-                </div>
-                <div class="habilidad">
-                    <figure>
-                        <img src="img/logo-bootstrap.png" alt="">
-                    </figure>
-                    <h3>Bootstrap</h3>
-                </div>
-            </div>
-        </div>
-        <h2 id="contacto">Contacto</h2>
-        <!-- -- - - - - C O N T A C T O - - - - - - - --->
-        <div class="contacto reveal-left" id="contactainer">
-            <div class="contacto" >
-                <div class="contacto__container linkedin">
-                    <div class="contacto__img">
-                        <img src="img/logo-linkedin.png" alt="">
-                    </div>
-                    <div class="contacto__info">
-                        <h4>Linkedin</h4>
-                        <hr>
-                        <a href="https://www.linkedin.com/in/posadas-matias/" class="btn" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                    </div>
-                </div>
+    </footer>
+    <script src="../js/index.js"></script>
 
-                <div class="contacto__container  correo">
-                    <div class="contacto__img">
-                        <img src="img/logo-correo.png" alt="">
-                    </div>
-                    <div class="contacto__info">
-                        <h4>Correo</h4>
-                        <hr>
-                        <a href="mailto:connect.matias.posadas@gmail.com" class="btn" target="_blank" rel="noopener noreferrer">Correo</a>
-                    </div>
-                </div>
 
-                <div class="contacto__container  github">
-                    <div class="contacto__img">
-                        <img src="img/logo-github.png" alt="">
-                    </div>
-                    <div class="contacto__info">
-                        <h4>Github</h4>
-                        <hr>
-                        <a href="https://github.com/MatiasPosadas" class="btn" target="_blank" rel="noopener noreferrer">Github</a>
-                    </div>
-                </div>
+    <script>
 
-                <div class="contacto__container  github">
-                    <div class="contacto__img">
-                        <img src="img/logo-whatsaap.png" alt="Logo whatsaap">
-                    </div>
-                    <div class="contacto__info">
-                        <h4>Whatsaap</h4>
-                        <hr>
+        //smoth scroll
 
-                        <a href="https://walink.co/89f0cb" class="btn" target="_blank" rel="noopener noreferrer">Mensaje</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
 
-    <div class="go-top-container">
-        <div class="go-top-button">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-    </div>
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-        <footer>
-            <a href="">
-                <div>
-                    <figure>
-                        <img src="img/firma.png" alt="">
-                    </figure>
-                </div>
-            </a>
-        </footer>
+        // Store hash
+        var hash = this.hash;
 
-        <script src="javascript/gotop.js"></script>
-        <script src="javascript/index.js"></script>
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+});
+</script>
+
 </body>
 </html>
