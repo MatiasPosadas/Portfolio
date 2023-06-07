@@ -328,7 +328,7 @@ header .btn {
     max-width: 50%;
     /* min-width: 500px; */
     height: auto;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     
