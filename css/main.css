@@ -534,7 +534,9 @@ background: linear-gradient(90deg, rgba(71,33,158,1) 0%, rgba(113,66,222,1) 40%)
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    overflow-x: scroll;
 }
 #project .project-box h1 {
     display: block;
@@ -543,6 +545,7 @@ background: linear-gradient(90deg, rgba(71,33,158,1) 0%, rgba(113,66,222,1) 40%)
 
 #project .project-box .project-card {
     width: 38rem;
+    min-width: 38rem;
     height: auto;
     min-height: 66rem;
     margin: 0 auto;
