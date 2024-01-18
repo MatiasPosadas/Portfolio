@@ -108,6 +108,11 @@ nav .nav-botones button, a{
     text-decoration: none;
     color: var(--purpura-oscuro)
 }
+.btn-ini:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+    transition: all ease-in .3s;
+}
 #lkd:hover {
 color: #0077b7;
 }
