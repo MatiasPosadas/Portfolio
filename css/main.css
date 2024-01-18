@@ -108,6 +108,15 @@ nav .nav-botones button, a{
     text-decoration: none;
     color: var(--purpura-oscuro)
 }
+#lkd:hover {
+color: #0077b7;
+}
+#ghb:hover {
+    color: black;
+}
+#maillg:hover {
+    color: rgb(197, 58, 24);
+}
 body.dark nav .nav-botones button a {
     color: rgb(255, 255, 255);
 }
