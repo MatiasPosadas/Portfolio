@@ -538,19 +538,22 @@ background: linear-gradient(90deg, rgba(71,33,158,1) 0%, rgba(113,66,222,1) 40%)
 
 /*- - - - - - P R O J E C T  - - - - - - */
 #project {
-    height: auto;
+    height: 20%;
     padding: 4rem 0;
 }
 #project .project-box {
-    width: 90%;
+    width: 95%;
+    height: 25%;
     margin: 0 auto;
     text-align: center;
+    /* cursor: pointer;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 4rem;
     overflow-x: scroll;
+    /* background-color: #00a1ff; */
 }
 #project .project-box h1 {
     display: block;
@@ -558,16 +561,17 @@ background: linear-gradient(90deg, rgba(71,33,158,1) 0%, rgba(113,66,222,1) 40%)
 }
 
 #project .project-box .project-card {
-    width: 38rem;
+    /* width: 29%; */
     min-width: 38rem;
-    height: auto;
-    min-height: 66rem;
+    /* height: 100%; */
+    /* min-height: 20rem; */
+    /* background-color: red; */
     margin: 0 auto;
     margin-top: 6rem;
     border-radius: 0.5rem;
     text-align: center;
     margin-bottom: 2rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 body.dark #project .project-box .project-card {
